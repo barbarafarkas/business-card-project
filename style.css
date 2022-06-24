@@ -1,0 +1,164 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  /* Position */
+  
+  .profile-card {
+    width: 350px;
+    max-width: calc(100vw - 10px);
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:calibri;
+  }
+  
+  .head, .links {
+    text-align: center;
+  }
+  
+  .head, .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .profile-picture {
+    margin-top: -60px;
+    margin-bottom: 10px
+  }
+  
+  /* Contact links */
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  .head, .about {
+    margin-bottom: 10%;
+  }
+  
+  .content {
+    padding: 5% 5%;
+    font-family:calibri;
+    font-size:18px;
+    line-height:1.25;
+  }
+    
+  
+  body {
+    background: url('assets/hatter.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .profile-card {
+    background-color: hsl(234, 4%, 90%, 75%);
+    border-radius:10px;
+    box-shadow: hsla(0, 5%, 0%, 1.8) 0px 5px 20px;
+  }
+  
+  img, .profile-picture {
+    filter: grayscale(0%);
+    overflow: hidden;
+    display: inline-block;
+    border-radius:80px;
+    }
+  
+  .content {
+    border-top: 2px solid hsla(0, 0%, 90%, .2);
+    }
+  
+  .about{
+    margin-top:10px;
+  }
+  
+  .profile-picture:after {
+    content: "";
+    position: absolute;
+      top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+      background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover - trigger effect */
+  .profile-picture:hover:after {
+    opacity: 1;
+    left: 110%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
+  /* Active state */
+  .profile-picture:active:after {
+    opacity: 0;
+  }
+  
+  h1{
+    text-transform:uppercase;
+    font-size:25px;
+    color:#435F72;
+  }
+  
+  .profile-headline{
+    font-size:20px;
+    font-family:Calibri;
+  }
+  
+  
+  .fa {
+    color:#435F72;
+    font-size: 25px
+  }
+  
+  #contact{
+    color: #435F72;
+    font-size:25px;
+    margin-top:-20px;
+  }
+  
+  .name-headline {
+    line-height:1.5;
+  }
+  
+  .links{
+    line-height:2;
+  }
+    
+  .icons{
+    letter-spacing:6px;
+  }
+    
+  h2{
+    font-size:19px;
+  } 
