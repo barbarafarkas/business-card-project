@@ -138,7 +138,6 @@
   
   .fa {
     color:#435F72;
-    font-size: 25px
   }
   
   #contact{
@@ -157,6 +156,7 @@
     
   .icons{
     letter-spacing:6px;
+    font-size:25px;
   }
     
   h2{
