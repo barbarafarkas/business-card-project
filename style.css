@@ -11,7 +11,7 @@
   
   .profile-card {
     width: 350px;
-    max-width: calc(100vw - 10px);
+    max-width: calc(100vw - 20px);
   }
   
   body {
@@ -20,6 +20,7 @@
     align-items: center;
     height: 100vh;
     font-family:calibri;
+    width: 100vw;
   }
   
   .head, .links {
@@ -74,6 +75,7 @@
     background-color: hsl(234, 4%, 90%, 75%);
     border-radius:10px;
     box-shadow: hsla(0, 5%, 0%, 1.8) 0px 5px 20px;
+    max-width: calc(100vw - 10px);
   }
   
   img, .profile-picture {
@@ -162,3 +164,18 @@
   h2{
     font-size:19px;
   } 
+
+@media only screen and (max-width: 480px) {
+  body{
+      margin: 45px 0 0 0;
+  }
+      
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+  body{
+    margin: 35px 0 0 0;
+}
+}
+
+
